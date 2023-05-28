@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+    // prime or not;
+    
+    int n1, flag = 0;
+    printf("Enter a value to check for prime/not : ");
+    scanf("%d", &n1);
+    
+    if(n1 > 1)
+    {
+        for(int i=1;i<=n1;i++)
+        {
+            if(n1 % i == 0)
+                flag++;
+            else
+                continue;
+        }
+        
+        if (flag == 2)
+            printf("Its a prime number :)");
+        else
+            printf("Its not a prime :;");
+    }
+    
+    else if(n1 == 1)
+        printf("Its a prime too :)");
+    
+    else
+        printf("Enter a valid number > than 0 :::)))");
+}
