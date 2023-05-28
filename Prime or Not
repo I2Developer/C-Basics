@@ -18,14 +18,14 @@ void main()
         }
         
         if (flag == 2)
-            printf("Its a prime number :)");
+            printf("Its a prime!");
         else
-            printf("Its not a prime :;");
+            printf("Its not a prime;");
     }
     
     else if(n1 == 1)
-        printf("Its a prime too :)");
+        printf("Its a prime!");
     
     else
-        printf("Enter a valid number > than 0 :::)))");
+        printf("Enter a valid number greater than 0;");
 }
