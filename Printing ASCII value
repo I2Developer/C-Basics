@@ -1,0 +1,10 @@
+
+#include<stdio.h>
+void main()
+{
+    // ASCII values of a character;
+    char num;
+    printf("Enter a character to find ascii value : ");
+    scanf("%c",&num);
+    printf("\nThe ASCII value of %c is %d", num,num);
+}
