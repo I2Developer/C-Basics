@@ -1,0 +1,25 @@
+
+
+#include<stdio.h>
+void main()
+{
+    // Swapping of two variables;
+    
+    int var1, var2;
+    printf("Enter values for two variables : ");
+    scanf("%d %d",&var1,&var2);
+    
+    printf("\nValues before swapping : %d %d \n",var1,var2);
+    
+    void swap(int *var1,int *var2)      // Using function;
+    {
+        int temp;
+        temp = *var1;
+        *var1 = *var2;
+        *var2 = temp;
+    }
+    
+    swap(&var1, &var2);
+    printf("Values after swapping : %d %d",var1,var2);
+}
+
