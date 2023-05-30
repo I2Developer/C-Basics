@@ -32,8 +32,8 @@ void main()
         }
     }
     
-    else if (N == 1)
-        printf("The prime number is : %d",N);
+    else if (N >= 0)
+        printf("Its not a prime number");
     
     else
         printf("Enter a valid number greater than 0;");
