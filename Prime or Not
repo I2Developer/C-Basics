@@ -23,8 +23,8 @@ void main()
             printf("Its not a prime;");
     }
     
-    else if(n1 == 1)
-        printf("Its a prime!");
+    else if(n1 >= 0)
+        printf("Its not a prime!");
     
     else
         printf("Enter a valid number greater than 0;");
