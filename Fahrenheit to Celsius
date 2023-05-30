@@ -1,0 +1,15 @@
+
+#include<stdio.h>
+void main()
+{
+    // Fahrenheit to Celsius;
+    
+    float fah;
+    printf("Enter a fahrenheit value : ");
+    scanf("%f",&fah);
+    
+    float cel;
+    cel = (fah - 32) * 5/9;
+    printf("\nThe fahrenheit of %f is %.2f*C",fah, cel);
+    
+}
