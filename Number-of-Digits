@@ -1,0 +1,18 @@
+
+#include<stdio.h>
+void main()
+{
+    // Number of digits;
+    
+    int num, count = 0;
+    printf("Enter an integer value : ");
+    scanf("%d",&num);
+    
+    while (num != 0)
+    {
+        num = num / 10;
+        count++;
+    }
+    
+    printf("The number of digits : %d",count);
+}
