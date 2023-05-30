@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+void main()
+{
+    // Upper-Lower-Special Case;
+    
+    char test;
+    printf("Enter a character : ");
+    scanf("%c",&test);
+    
+    if ((test >= 65) && (test <= 90))
+        printf("The alphabet %c is Uppercase ", test);
+    else if ((test >= 97) && (test <= 122))
+        printf("The alphabet %c is Lowercsae ", test);
+    else
+        printf("The character %c is special case;", test);
+}
