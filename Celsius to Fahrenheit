@@ -10,6 +10,6 @@ void main()
     
     float fah;
     fah = (cel * 9/5) + 32;
-    printf("\nThe fahrenheit of %f*c is %f",cel, fah);
+    printf("\nThe fahrenheit of %f*C is %f",cel, fah);
     
 }
