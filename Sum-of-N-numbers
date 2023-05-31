@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+void main()
+{
+    // Sum of N Natural numbers;
+    
+    int N, sum = 0;
+    printf("Enter the Nth value : ");
+    scanf("%d", &N);
+    
+    for (int i=1;i<=N;i++)
+    {
+        sum = sum + i;
+    }
+    printf("The sum of N natural number is : %d",sum);
+}
