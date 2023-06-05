@@ -1,0 +1,57 @@
+#include<stdio.h>
+void main()
+{
+    // Matrix Multiplication;
+    
+    int i,j,k;
+    int mat1[3][3],mat2[3][3];
+    
+    // input 1;
+    printf("\nEnter value for the matrix 1 : \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&mat1[i][j]);
+        }
+    }
+    
+    // input 2;
+    printf("\nEnter value for the matrix 2 : \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&mat2[i][j]);
+        }
+    }
+    
+    // Calculating ;
+    
+    int mat[3][3] = {};
+    printf("\nThe final matrix is : \n");
+    
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            for(k=0;k<3;k++)
+            {
+                mat[i][j] = mat[i][j] + (mat1[i][k] * mat2[k][j]);
+            }
+        }
+        printf("\n");
+    }
+    
+    // output;
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",mat[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+// Caution : While getting value from user for rows and columns, replace k = column value in test condition of multiplying statement;
