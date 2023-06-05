@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    // Armstrong or Not;
+    
+    int N;
+    printf("Enter the number to check armstrong : ");
+    scanf("%d", &N);
+    
+    int val = N;
+    int temp, arm;
+    while(N != 0)
+    {
+        temp = N % 10;
+        arm = arm + (pow(temp,3));
+        N = N / 10;
+    }
+    if(val == arm)
+        printf("Its a Armstrong");
+    else
+        printf("Not a Armstrong");
+}
