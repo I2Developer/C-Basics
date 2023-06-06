@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+    // Decimal to Binary Convertion;
+    
+    int dec;
+    printf("Enter the Decimal value : ");
+    scanf("%d",&dec);
+    
+    int bin[25];
+    int i=0;
+    while(dec != 0)
+    {
+        bin[i] = bin[i] + dec % 2;
+        dec /= 2;
+        i++;            // i increased even after the execution;
+    }
+    
+    i = i - 1;          // bound to original index 6-to-0;
+    printf("The binary value is : ");
+    for (;i>=0;i--)
+        printf("%d",bin[i]);
+}
