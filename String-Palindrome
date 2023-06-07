@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    // Reversing a string;
+
+    char arr[15];
+    printf("Enter the string : ");
+    scanf("%s",arr);
+    int n = strlen(arr);
+    
+    int j=0;
+    int i = n;
+    char rev[15];
+    while(i>=0)
+    {
+        i--;
+        rev[j] = arr[i];        // storing in reverse order;
+        j++;
+    }
+    
+    int flag;
+    for(i=0;i<n;i++)
+    {
+        if(arr[i] == rev[i])    // Entered and Reversed are checked here;
+            flag = 1;
+        else
+        {
+            flag = 0;
+            break;
+        }
+    }
+    if(flag == 1)
+        printf("\nIts palindrome");
+    else
+        printf("\nnot a palindrome");
+}
