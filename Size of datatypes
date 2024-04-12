@@ -7,8 +7,8 @@ void main()
     float n3;
     double n4;
     
-    printf("\n Size of char is  : %c", sizeof(n1));
+    printf("\n Size of char is  : %d", sizeof(n1));
     printf("\n Size of int is   : %d", sizeof(n2));
-    printf("\n Size of float is : %f", sizeof(n3));
-    printf("\n Size of double is: %lf", sizeof(n4));
+    printf("\n Size of float is : %d", sizeof(n3));
+    printf("\n Size of double is: %d", sizeof(n4));
 }
