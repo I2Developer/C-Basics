@@ -2,7 +2,7 @@
 #include<stdio.h>
 void main()
 {
-    // Upper-Lower-Special Case;
+    // Area of a Circle;
     
     float rad;
     printf("Enter radius of a circle : ");
